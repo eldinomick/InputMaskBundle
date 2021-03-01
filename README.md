@@ -8,8 +8,16 @@ Install with composer :
 ```bash
 composer require it/input-mask-bundle
 ```
+For Symfony 5 :
+```bash
+npm install --force
+```
+or
+```bash
+yarn install --force
+```
 
-### Enable the bundle in your project (only for Symfony 2-3. Sf4 does it automatically)
+### Enable the bundle in your project (only for Symfony 2-3. Sf4-5 does it automatically)
 
 ```php
 // app/AppKernel.php
@@ -35,14 +43,15 @@ twig:
         - 'ITInputMaskBundle:Form:inputMaskFields.html.twig'
 ```
 
-### Symfony 4 method
+### Symfony 4-5 method
 ```yaml
-# config/packages/input_mask.yml
+# create config/packages/input_mask.yml
 # Or in config/packages/twig.yml
 
 twig:
     form_themes:
         - '@ITInputMask/Form/inputMaskFields.html.twig'
+        - ...
 ```
 
 ## Usage
